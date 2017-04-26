@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.button-comp {
+	border: 1px solid #bbb;
+	padding: 5px;
+	legend {
+		color: #bbb;
+		font-size: 12px;
+	}
+}
+
+.button {
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	&:active {
+		background: #ddd;
+	}
+}
