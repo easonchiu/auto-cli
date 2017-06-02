@@ -1,6 +1,3 @@
-import 'babel-polyfill'
-
-
 // import Perf from 'react-addons-perf'
 // window.Perf = Perf
 
@@ -10,8 +7,8 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 
 // 全局store
-import figureStore from 'src/redux/store'
-const store = figureStore()
+import configureStore from 'src/redux/store'
+const store = configureStore()
 
 // 根路由容器
 import Routers from 'src/routes'

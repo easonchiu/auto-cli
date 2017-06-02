@@ -21,9 +21,8 @@ module.exports = {
 	},
 
 	output: {
-		path: config[process.env.NODE_ENV].assetsRoot,
-		filename: '[name].js',
-		publicPath: config[process.env.NODE_ENV].assetsPublicPath
+		filename: utils.assetsPath('js/[name].js'),
+		chunkFilename: utils.assetsPath('js/[id].js'),
 	},
 
 	module: {
@@ -89,6 +88,42 @@ module.exports = {
 			filename: utils.assetsPath('css/[name].[hash:7].css'),
 			allChunks: true,
 		}),
+
+		// 提取公共脚本
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'vendor',
+			minChunks: function(module, count) {
+                return (
+                    module.resource &&
+                    /\.js$/.test(module.resource) &&
+                    module.resource.indexOf(
+                        path.join(__dirname, '../node_modules')
+                    ) === 0
+                )
+            }
+		}),
+
+		// 抽babel相关的东西出来，es6/es7转es5的玩意
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'core',
+            chunks: ['vendor'],
+            minChunks: function(module, count) {
+            	return (
+            		module.resource && /(\/|\@)core-js\//.test(module.resource)
+                )
+            }
+        }),
+
+        // 上面虽然已经分离了第三方库,每次修改编译都会改变vendor的hash值，导致浏览器缓存失效。
+		// 原因是vendor包含了webpack在打包过程中会产生一些运行时代码，运行时代码中实际上保存了打包后的文件名。
+		// 当修改业务代码时,业务代码的js文件的hash值必然会改变。
+		// 一旦改变必然会导致vendor变化。vendor变化会导致其hash值变化。
+		// 下面主要是将运行时代码提取到单独的manifest文件中，防止其影响vendor.js
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'mainifest',
+			chunks: ['core']
+		}),
+
 	],
 
 	resolve: {

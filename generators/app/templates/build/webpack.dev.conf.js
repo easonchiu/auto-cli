@@ -23,18 +23,19 @@ const webpackConfig = merge(baseWebpackConfig, {
 	    hot: true,
 	    open: true,
 	    inline: true,
+	    disableHostCheck: true,
 	    port: config.develop.port,
 	    proxy: {
-	    	'**': {
-	            target: '',
+	    	'/api/*': {
+	            target: 'http://easy-mock.com/mock/59018fb47a878d73716db9bd/example',
+	            pathRewrite: {
+	            	'/api/': '/'
+	            },
 	            changeOrigin: true,
 	            secure: false,
 	        },
 	    }
 	}
 })
-
-// 我他妈也不明白为什么不能有output，写了就没get error了
-delete webpackConfig.output
 
 module.exports = webpackConfig
