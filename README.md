@@ -32,16 +32,26 @@
 |			|- style.scss
 ```
 
-#### 构建项目
+#### 使用
+
+
 ```
+// 安装yeoman
+$ npm install -g yo
+
+// 然后安装脚手架
+$ npm install -g generator-auto-react
+
+// 构建项目
 $ mkdir myApp
 $ cd myApp
-$ yo auto-react
+$ yo auto-react // 之后根据提示配置一些信息
+$ yarn // 安装npm包
 
-// ...一些配置项
-
-$ yarn
+// 安装完成之后
+npm run dev // 浏览器将自动打开，或手动 localhost:3333
 ```
+
 
 #### 扩展项目
 ```
