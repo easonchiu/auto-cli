@@ -1,5 +1,5 @@
 {
-  "name": "<%= appName %>",
+  "name": "app",
   "version": "1.0.0",
   "description": "<%= appDesc %>",
   "main": "main.jsx",
@@ -12,7 +12,7 @@
     "test4": "node build/build.test4.js",
     "test5": "node build/build.test5.js"
   },
-  "author": "",
+  "author": "easonchiu",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.18.2",
