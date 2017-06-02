@@ -34,7 +34,13 @@
 
 #### 构建项目
 ```
+mkdir myApp
+cd myApp
 yo auto-react
+
+... 一些配置项
+
+yarn
 ```
 
 #### 扩展项目
@@ -48,3 +54,6 @@ container
 view
 reducer
 ```
+
+#### Css Modules
+支持css-modules，为了与scss能共同使用，css-modules的样式文件使用.mass，如果需要更换css-modules样式名生成的规则，请到`build/webpack.base.conf.js`中打相应的rules进行修改

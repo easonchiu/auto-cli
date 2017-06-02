@@ -52,6 +52,10 @@ module.exports = yeoman.extend({
             name: 'path',
             message: 'path: ',
             default: 'src/components/'
+        },{
+            type: 'confirm',
+            name: 'mass',
+            message: 'css modules?',
         }];
 
         // 创建容器
@@ -65,6 +69,10 @@ module.exports = yeoman.extend({
             name: 'path',
             message: 'path: ',
             default: 'src/containers/'
+        },{
+            type: 'confirm',
+            name: 'mass',
+            message: 'css modules?',
         }];
 
         // 创建页面
@@ -78,6 +86,10 @@ module.exports = yeoman.extend({
             name: 'path',
             message: 'path: ',
             default: 'src/views/'
+        },{
+            type: 'confirm',
+            name: 'mass',
+            message: 'css modules?',
         }];
 
         // 创建reducer
@@ -118,6 +130,7 @@ module.exports = yeoman.extend({
         }).then(props => {
             this.props.name = props.name;
             this.props.path = props.path;
+            this.props.mass = props.mass;
             return this.prompt(promptsOk);
         }).then(props => {
             this.props.ok = props.ok;
@@ -137,9 +150,11 @@ module.exports = yeoman.extend({
 
             this.props.upperName = firstUpperCase(this.props.name);
 
+            var type = this.props.mass ? 'mass' : 'scss'
+
             // 拷贝jsx文件
             this.fs.copyTpl(
-                this.templatePath(this.props.createBy + '/index.jsx'),
+                this.templatePath(this.props.createBy + '/' + type + '/index.jsx'),
                 this.destinationPath(`${this.props.path}/${this.props.name}/index.jsx`),
                 {
                     upperName: this.props.upperName,
@@ -149,8 +164,8 @@ module.exports = yeoman.extend({
 
             // 拷贝css文件
             this.fs.copyTpl(
-                this.templatePath(this.props.createBy + '/style.scss'),
-                this.destinationPath(`${this.props.path}/${this.props.name}/style.scss`),
+                this.templatePath(this.props.createBy + '/' + type + '/style.' + type),
+                this.destinationPath(`${this.props.path}/${this.props.name}/style.${type}`),
                 {
                     upperName: this.props.upperName,
                     name: this.props.name
