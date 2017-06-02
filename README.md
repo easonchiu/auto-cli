@@ -34,13 +34,13 @@
 
 #### 构建项目
 ```
-mkdir myApp
-cd myApp
-yo auto-react
+$ mkdir myApp
+$ cd myApp
+$ yo auto-react
 
-... 一些配置项
+// ...一些配置项
 
-yarn
+$ yarn
 ```
 
 #### 扩展项目
