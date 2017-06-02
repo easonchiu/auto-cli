@@ -1,16 +1,16 @@
 {
-  "name": "name",
+  "name": "<%= appName %>",
   "version": "1.0.0",
-  "description": "desc",
+  "description": "<%= appDesc %>",
   "main": "main.jsx",
   "scripts": {
     "build": "node build/build.prod.js",
+    "dev": "webpack-dev-server --host 0.0.0.0 --progress --config build/build.dev.js",
     "test1": "node build/build.test1.js",
     "test2": "node build/build.test2.js",
     "test3": "node build/build.test3.js",
     "test4": "node build/build.test4.js",
-    "test5": "node build/build.test5.js",
-    "dev": "webpack-dev-server --host 0.0.0.0 --progress --config build/build.dev.js"
+    "test5": "node build/build.test5.js"
   },
   "author": "",
   "license": "ISC",
@@ -52,6 +52,7 @@
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
-    "babel-plugin-transform-runtime": "^6.23.0"
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "react-css-modules": "^4.3.0"
   }
 }

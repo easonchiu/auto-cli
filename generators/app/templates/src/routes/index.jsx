@@ -1,19 +1,19 @@
 import React from 'react'
-import { HashRouter as Router, Route, Redirect } from 'react-router-dom'
+import { HashRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
 
 
 import ViewDemo from 'src/views/demo'
 
 
-const router = () => {
+const Routes = () => {
 	return (
 		<Router>
-			<div>
+			<Switch>
 				<Route exact path="/" component={ ViewDemo }/>
 				<Redirect from="*" to="/" />
-			</div>
+			</Switch>
 		</Router>
 	)
 }
 
-export default router
+export default Routes

@@ -1,6 +1,6 @@
 import { createAction } from 'redux-actions'
 
-const emit = createAction('DEMO_EMIT');
+const emit = createAction('DEMO_EMIT')
 
 
 const delay = (delay = 2000) => {

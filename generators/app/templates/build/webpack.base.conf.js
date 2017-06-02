@@ -52,6 +52,11 @@ module.exports = {
         		use: ['css-loader'],
         	})
 		}, {
+        	test: /\.mass$/,
+        	use: ExtractTextPlugin.extract({
+        		use: ['css-loader?modules&importLoaders=1&localIdentName=_[hash:base64:11]', 'sass-loader'],
+        	})
+        }, {
         	test: /\.scss$/,
         	use: ExtractTextPlugin.extract({
         		use: ['css-loader', 'sass-loader'],
@@ -127,7 +132,7 @@ module.exports = {
 	],
 
 	resolve: {
-		extensions: ['.js', '.jsx', '.scss', '.css'],
+		extensions: ['.js', '.jsx', '.scss', '.css', '.mass'],
 		alias: {
 			'src': resolve('src')
 		}

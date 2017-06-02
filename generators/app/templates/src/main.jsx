@@ -2,7 +2,7 @@
 // window.Perf = Perf
 
 
-import React from 'react'
+import React, { Component } from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 
@@ -13,10 +13,9 @@ const store = configureStore()
 // 根路由容器
 import Routers from 'src/routes'
 
-
 // 挂载到根元素
 render(
-	<Provider store={ store }>
+	<Provider store={store}>
 		<Routers />
 	</Provider>,
 	document.getElementById('root')

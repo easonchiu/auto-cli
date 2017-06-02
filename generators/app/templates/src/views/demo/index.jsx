@@ -1,9 +1,13 @@
-import './style'
+import styles from './style'
 import React, { Component } from 'react'
-
 import connect from 'src/redux/connectProps'
+import mass from 'src/assets/libs/mass'
+
+
 
 import List from 'src/containers/list'
+
+
 
 class ViewDemo extends Component {
 	constructor(props) {
@@ -33,10 +37,10 @@ class ViewDemo extends Component {
 	}
 	render() {
 		return (
-			<fieldset className="view-demo">
+			<fieldset styleName="view-demo">
 				<legend>I am 'demo' view</legend>
-				<h1 className="title">demo view with react</h1>
-				<p className="info">store: { this.props.$$demo.name }</p>
+				<h1 styleName="title">demo view with react</h1>
+				<p styleName="info">store: { this.props.$$demo.name }</p>
 				<List content={ this.list } />
 				<br />
 				<List content={ this.list } />
@@ -45,4 +49,4 @@ class ViewDemo extends Component {
 	}
 }
 
-export default connect(ViewDemo)
+export default connect(mass(ViewDemo, styles))

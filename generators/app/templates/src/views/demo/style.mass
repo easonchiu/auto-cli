@@ -1,16 +1,19 @@
 @charset "utf-8";
 
 .view-demo {
-	border: 1px solid #333;
+	border: 1px solid #f00;
 	padding: 20px;
-	.title {
+	> legend {
+		color: #f00;
+	}
+	@at-root .title {
 		display: block;
 		font-size: 24px;
 		text-align: center;
 		line-height: 1.5;
 		margin: 0;
 	}
-	.info {
+	@at-root .info {
 		display: block;
 		font-size: 12px;
 		text-align: center;
