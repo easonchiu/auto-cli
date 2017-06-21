@@ -56,6 +56,7 @@ module.exports = yeoman.extend({
             type: 'confirm',
             name: 'mass',
             message: 'css modules?',
+            default: 'n'
         }];
 
         // 创建容器
@@ -73,6 +74,7 @@ module.exports = yeoman.extend({
             type: 'confirm',
             name: 'mass',
             message: 'css modules?',
+            default: 'n'
         }];
 
         // 创建页面
@@ -90,6 +92,7 @@ module.exports = yeoman.extend({
             type: 'confirm',
             name: 'mass',
             message: 'css modules?',
+            default: 'n'
         }];
 
         // 创建reducer

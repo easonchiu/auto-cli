@@ -11,11 +11,11 @@ function resolve(dir) {
 }
 
 process.env.NODE_ENV = JSON.parse(process.env.NODE_ENV)
+process.env.ENV_NAME = JSON.parse(process.env.ENV_NAME)
 
-const env = config[process.env.NODE_ENV].env
+const env = config[process.env.ENV_NAME].env
 
-
-module.exports = {
+const webpackConfig = {
 	entry: {
 		app: resolve('src/main.jsx')
 	},
@@ -36,7 +36,7 @@ module.exports = {
             options: {
                 limit: 10000,
                 name: utils.assetsPath('fonts/[name].[hash:7].[ext]'),
-                publicPath: config[process.env.NODE_ENV].cssAssetsPath,
+                publicPath: config[process.env.ENV_NAME].cssAssetsPath,
             }
         }, {
             test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -44,7 +44,7 @@ module.exports = {
             options: {
                 limit: 10000,
                 name: utils.assetsPath('img/[name].[hash:7].[ext]'),
-                publicPath: config[process.env.NODE_ENV].cssAssetsPath,
+                publicPath: config[process.env.ENV_NAME].cssAssetsPath,
             }
         }, {
 			test: /\.css$/,
@@ -75,6 +75,9 @@ module.exports = {
 		new webpack.DefinePlugin({
             'process.env': env
         }),
+	
+		// 启用范围提升，用于改进包的体积
+        new webpack.optimize.ModuleConcatenationPlugin(),
 
 		// 提取html模板
 		new HtmlWebpackPlugin({
@@ -134,8 +137,9 @@ module.exports = {
 	resolve: {
 		extensions: ['.js', '.jsx', '.scss', '.css', '.mass'],
 		alias: {
-			'src': resolve('src')
+			'src': resolve('src'),
 		}
 	}
 }
 
+module.exports = webpackConfig

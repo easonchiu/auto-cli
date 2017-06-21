@@ -1,19 +1,15 @@
-// import Perf from 'react-addons-perf'
-// window.Perf = Perf
-
-
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 
-// 全局store
+// store
 import configureStore from 'src/redux/store'
 const store = configureStore()
 
-// 根路由容器
+// routes
 import Routers from 'src/routes'
 
-// 挂载到根元素
+// render to #root
 render(
 	<Provider store={store}>
 		<Routers />

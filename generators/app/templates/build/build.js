@@ -1,9 +1,11 @@
-function build(_env) {
+function build(env, name) {
 
 	// 设置环境变量
-	process.env.NODE_ENV = _env
+	process.env.NODE_ENV = env
+	process.env.ENV_NAME = name
 
-	_env = JSON.parse(_env)
+	env = JSON.parse(env)
+	name = JSON.parse(name)
 
 	// webpack组件
 	const webpack = require('webpack')
@@ -12,7 +14,12 @@ function build(_env) {
 	const config = require('../config')
 
 	// webpack配置
-	const webpackConfig = require('./webpack.prod.conf')
+	let webpackConfig
+	if (name === 'production') {
+		webpackConfig = require('./webpack.prod.conf')
+	} else {
+		webpackConfig = require('./webpack.test.conf')
+	}
 
 	// loading动画组件
 	const ora = require('ora')
@@ -27,13 +34,13 @@ function build(_env) {
 	const path = require('path')
 
 	// 开始转菊花
-	const spin = ora(chalk.blue(`build for ${_env}...`))
+	const spin = ora(chalk.blue(`build for ${env} / ${name}...`))
 	spin.start()
 
 	// 删除构建目录
 	// 然后重新构建项目
 	rm(
-		path.join(config[_env].assetsRoot),
+		path.join(config[name].assetsRoot),
 		err => {
 
 			if (err) throw err

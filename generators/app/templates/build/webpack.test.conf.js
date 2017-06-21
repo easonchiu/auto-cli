@@ -4,6 +4,7 @@ const utils = require('./utils')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+const Visualizer = require('webpack-visualizer-plugin')
 
 const baseWebpackConfig = require('./webpack.base.conf')
 
@@ -29,7 +30,9 @@ const webpackConfig = merge(baseWebpackConfig, {
                 safe: true
             }
         }),
-
+		
+		// js包大小的报告，会生成stats.html于根目录下
+		new Visualizer()
     ],
 
     output: {
