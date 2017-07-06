@@ -1,7 +1,7 @@
 {
-  "name": "<%= appName %>",
+  "name": "appName",
   "version": "0.0.1",
-  "description": "<%= appDesc %>",
+  "description": "appDesc",
   "main": "main.jsx",
   "scripts": {
     "build": "node build/build.prod.js",
@@ -56,6 +56,6 @@
     "webpack-visualizer-plugin": "^0.1.11"
   },
   "dependencies": {
-    
+    "classnames": "^2.2.5"
   }
 }

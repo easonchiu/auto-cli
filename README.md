@@ -2,10 +2,14 @@
 
 
 #### Log
-[x] 1.2.2 redux中的state使用seamless-immutable
-[x] 1.2.2 view中默认的shouldComponentUpdate语法
-[x] 1.2.2 webpack在打包test包时使用正式版本的js代码，同时生成包大小的报告
-[x] 1.2.2 升级webpack至3.0.0，并使用ModuleConcatenationPlugin插件
+##### 1.2.3
+- 模板<title/>标签动态填充，值为desc字段  
+
+##### 1.2.2  
+- redux中的state使用seamless-immutable  
+- view中默认的shouldComponentUpdate语法  
+- webpack在打包test包时使用正式版本的js代码，同时生成包大小的报告  
+- 升级webpack至3.0.0，并使用ModuleConcatenationPlugin插件  
 
 
 #### 目录结构：

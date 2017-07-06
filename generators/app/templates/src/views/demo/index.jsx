@@ -7,6 +7,8 @@ import mass from 'src/assets/libs/mass'
 
 import List from 'src/containers/list'
 
+import {Layout,Cell,Button} from 'src/auto'
+
 
 
 class ViewDemo extends Component {
@@ -35,18 +37,49 @@ class ViewDemo extends Component {
 			})
 		}
 	}
+	_click(id){
+		
+	}
 	render() {
 		return (
-			<fieldset styleName="view-demo">
-				<legend>I am 'demo' view</legend>
-				<h1 styleName="title">demo view with react</h1>
-				<p styleName="info">store: { this.props.$$demo.name }</p>
-				<List content={ this.list } />
-				<br />
-				<List content={ this.list } />
-			</fieldset>
+			<Layout>
+				<Layout.Header />
+
+				
+				<Layout.Body>
+					
+					<Cell onClick={::this._click}>
+						<Cell.Row key={1} value="a">
+							<Button>Button</Button>
+							<hr />
+							<Button disabled>Button</Button>
+							<hr />
+							<Button ghost>Button</Button>
+							<hr />
+							<Button ghost disabled>Button</Button>
+						</Cell.Row>
+						<Cell.Row key={2} value="b">
+							Cell
+						</Cell.Row>
+					</Cell>
+
+				</Layout.Body>
+
+
+				<Layout.Footer />
+			</Layout>
 		)
 	}
 }
+
+
+// <fieldset styleName="view-demo">
+// 				<legend>I am 'demo' view</legend>
+// 				<h1 styleName="title">demo view with react</h1>
+// 				<p styleName="info">store: { this.props.$$demo.name }</p>
+// 				<List content={ this.list } />
+// 				<br />
+// 				<List content={ this.list } />
+// 			</fieldset>
 
 export default connect(mass(ViewDemo, styles))

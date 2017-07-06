@@ -29,7 +29,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 	    	'/api/*': {
 	            target: 'http://easy-mock.com/mock/59018fb47a878d73716db9bd/example',
 	            pathRewrite: {
-	            	'/api/': '/'
+	            	'^/api/': '/'
 	            },
 	            changeOrigin: true,
 	            secure: false,

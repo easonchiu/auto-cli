@@ -58,6 +58,15 @@ module.exports = yeoman.extend({
             }
         )
 
+        // 拷贝gitignore文件
+        this.fs.copyTpl(
+            this.templatePath('gitignore'),
+            this.destinationPath('.gitignore'),
+            {
+                prodPath: this.props.prodPath,
+            }
+        )
+
         // 拷贝package.json文件
         this.fs.copyTpl(
             this.templatePath('package.json'),
