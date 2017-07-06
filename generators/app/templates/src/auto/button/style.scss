@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.x-button {
+	display: block;
+	width: 100%;
+	background: #00bb55;
+	height: 0.88rem;
+	font-size: 0.3rem;
+	color: #fff;
+	border-radius: 0.05rem;
+	&:active {
+		background: #00bb55 - 10;
+	}
+	&__ghost {
+		border: 0.02rem solid #00bb55;
+		background: rgba(255,255,255,0.1);
+		color: #00bb55;
+		&:active {
+			background: rgba(0,187,85,0.08);
+		}
+	}
+	&__disabled {
+		opacity: 0.6;
+		pointer-events: none;
+	}
+}

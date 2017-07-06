@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.x-panel {
+	margin: -0.1rem;
+	&__item {
+		background: #fff;
+		margin-bottom: 0.15rem;
+		box-shadow: 0 0 0.08rem rgba(0,0,0,0.06);
+		border-radius: 0.05rem;
+		font-size: 0.3rem;
+		overflow: hidden;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	hr {
+		border: none;
+		background: #e5e5e5;
+		height: 0.01rem;
+		margin: 0;
+	}
+}
