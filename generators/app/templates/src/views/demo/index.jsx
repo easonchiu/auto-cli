@@ -2,9 +2,9 @@ import styles from './style'
 import React, { Component } from 'react'
 import connect from 'src/redux/connectProps'
 import mass from 'src/assets/libs/mass'
+import reactStateData from 'react-state-data'
 
 import List from 'src/containers/list'
-
 
 class ViewDemo extends Component {
 	constructor(props) {
@@ -51,4 +51,4 @@ class ViewDemo extends Component {
 
 
 
-export default connect(mass(ViewDemo, styles))
+export default connect(reactStateData(mass(ViewDemo, styles)))

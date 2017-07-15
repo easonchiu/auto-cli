@@ -2,6 +2,7 @@ import styles from './style'
 import React, { Component } from 'react'
 import mass from 'src/assets/libs/mass'
 import connect from 'src/redux/connectProps'
+import reactStateData from 'react-state-data'
 
 
 class View<%= upperName %> extends Component {
@@ -22,4 +23,4 @@ class View<%= upperName %> extends Component {
 	}
 }
 
-export default connect(mass(View<%= upperName %>, styles))
+export default connect(reactStateData(mass(View<%= upperName %>, styles)))

@@ -1,7 +1,7 @@
 {
-  "name": "appName",
+  "name": "<%= appName%>",
   "version": "0.0.1",
-  "description": "appDesc",
+  "description": "<%= appDesc%>",
   "main": "main.jsx",
   "scripts": {
     "build": "node build/build.prod.js",
@@ -53,9 +53,9 @@
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.4.2",
     "webpack-merge": "^4.1.0",
-    "webpack-visualizer-plugin": "^0.1.11"
-  },
-  "dependencies": {
-    "classnames": "^2.2.5"
+    "webpack-visualizer-plugin": "^0.1.11",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "classnames": "^2.2.5",
+    "react-state-data": "^1.0.8"
   }
 }

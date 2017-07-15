@@ -138,6 +138,7 @@ const webpackConfig = {
 		extensions: ['.js', '.jsx', '.scss', '.css', '.mass'],
 		alias: {
 			'src': resolve('src'),
+			'auto$': resolve('src/auto'),
 		}
 	}
 }

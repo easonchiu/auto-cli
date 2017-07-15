@@ -1,8 +1,10 @@
 import './style'
 import React, { Component } from 'react'
 import connect from 'src/redux/connectProps'
+import reactStateData from 'react-state-data'
 
 
+@reactStateData
 class View<%= upperName %> extends Component {
 	constructor(props) {
 		super(props)
