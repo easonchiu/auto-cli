@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+.view-demo {
+	padding-top: 0.6rem;
+	h1 {
+		text-align: center;
+		color: #3f3f81;
+		font-size: 0.32rem;
+		margin-bottom: 0.2rem;
+	}
+	p {
+		text-align: center;
+		font-size: 0.24rem;
+		line-height: 1.2;
+		color: #999;
+		margin-bottom: 1rem;
+	}
+
+	.logo {
+		width: 1.5rem;
+		height: 1.5rem;
+		background: url('../../assets/imgs/logo.png');
+		background-size: 100%;
+		margin: 0 auto;
+	}
+
+	.demo {
+		display: -webkit-box;
+		width: 100%;
+		-webkit-box-pack: center;
+		-webkit-box-align: center;
+		span {
+			display: block;
+			font-size: 0.4rem;
+			color: #3f3f81;
+			margin: 0 0.2rem;
+		}
+
+		.input {
+			display: block;
+			width: 0.8rem;
+			height: 0.8rem;
+			border: 0.02rem solid #3f3f81;
+			font-size: 0.4rem;
+			color: #3f3f81;
+			text-align: center;
+			border-radius: 0.1rem;
+		}
+
+		.result {
+			color: #fff;
+			border-radius: 0.1rem;
+			width: 0.8rem;
+			height: 0.8rem;
+			line-height: 0.8rem;
+			text-align: center;
+			background: #3f3f81;
+			margin: 0;
+		}
+	}
+
+
+}
+

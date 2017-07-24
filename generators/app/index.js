@@ -10,6 +10,7 @@ module.exports = yeoman.extend({
     constructor: function () {
         // 加上apply这句就能接收命令参数了
         yeoman.apply(this, arguments)
+
     },
 
     // 1. 接收参数
@@ -30,6 +31,14 @@ module.exports = yeoman.extend({
             message: 'production path name: ',
             default: 'dist',
         }, {
+            type: 'list',
+            name: 'state',
+            message: 'redux or mobx? ',
+            choices: [
+                'redux',
+                'mobx',
+            ]
+        }, {
             type: 'confirm',
             name: 'ok',
             message: 'ok?',
@@ -43,6 +52,9 @@ module.exports = yeoman.extend({
 
     // 2. 渲染模版
     writing: function () {
+
+        console.log(this.props)
+
         // 最后确认时选择n时停止渲染模板
         if (!this.props.ok) {
             console.log(chalk.red('stopped'))
@@ -95,7 +107,7 @@ module.exports = yeoman.extend({
 
         // 拷贝src目录
         this.fs.copy(
-            this.templatePath('src/**/*'),
+            this.templatePath('src-' + this.props.state + '/**/*'),
             this.destinationPath('src/')
         )
 
@@ -118,8 +130,9 @@ module.exports = yeoman.extend({
 
     // 3. 安装依赖
     install: function () {
-        console.log(chalk.bgBlue('done, please input \'yarn\'!'))
-        
+        if (this.props.ok) {
+            console.log(chalk.bgBlue('done, please input \'yarn\' to install !'))
+        }
         // this.npmInstall()
     }
 })

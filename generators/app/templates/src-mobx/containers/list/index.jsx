@@ -1,6 +1,6 @@
 import styles from './style'
 import React from 'react'
-import mass from 'src/assets/libs/mass'
+import mass from 'mass'
 
 
 import Button from 'src/components/button'

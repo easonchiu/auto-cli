@@ -1,7 +1,7 @@
 import { handleActions } from 'redux-actions'
 import Immutable from 'seamless-immutable'
 
-let initialState = Immutable({
+const initialState = Immutable({
 	reducerName: '<%= name %>'
 })
 

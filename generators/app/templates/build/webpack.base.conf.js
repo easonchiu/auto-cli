@@ -139,6 +139,7 @@ const webpackConfig = {
 		alias: {
 			'src': resolve('src'),
 			'auto$': resolve('src/auto'),
+			'mass$': resolve('src/assets/libs/mass'),
 		}
 	}
 }

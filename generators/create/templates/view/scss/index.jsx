@@ -1,9 +1,10 @@
 import './style'
 import React, { Component } from 'react'
-import connect from 'src/redux/connectProps'
+import connect from 'src/redux/connect'
 import reactStateData from 'react-state-data'
 
 
+@connect
 @reactStateData
 class View<%= upperName %> extends Component {
 	constructor(props) {
@@ -23,4 +24,4 @@ class View<%= upperName %> extends Component {
 	}
 }
 
-export default connect(View<%= upperName %>)
+export default View<%= upperName %>

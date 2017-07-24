@@ -1,4 +1,4 @@
-import 'src/assets/libs/reset'
+import 'src/assets/styles/reset'
 
 import React, { Component } from 'react'
 import { render } from 'react-dom'

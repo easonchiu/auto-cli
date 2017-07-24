@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 import * as actions from 'src/redux/actions/'
 
-export default (component) => {
+export default Component => {
 
 	const mapStateToProps = state => {
 		return {
@@ -14,7 +14,7 @@ export default (component) => {
 	const mapDispatchToProps = dispatch => {
 		let list = {}
 		for (let i in actions) {
-			list[i] = bindActionCreators(actions[i], dispatch);
+			list[i] = bindActionCreators(actions[i], dispatch)
 		}
 		return list
 	}
@@ -22,6 +22,6 @@ export default (component) => {
 	return connect(
 		mapStateToProps,
 		mapDispatchToProps,
-	)(component)
-
+	)(Component)
+	
 }
