@@ -3741,10 +3741,6 @@ react-dom@^15.6.1:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-react-fastclick@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/react-fastclick/-/react-fastclick-3.0.1.tgz#e438f9a63cad77c0bb61bb7fa4fd6668451ed83d"
-
 react-hot-api@^0.4.5:
   version "0.4.7"
   resolved "https://registry.yarnpkg.com/react-hot-api/-/react-hot-api-0.4.7.tgz#a7e22a56d252e11abd9366b61264cf4492c58171"
@@ -3768,16 +3764,16 @@ react-redux@^5.0.3:
     loose-envify "^1.1.0"
     prop-types "^15.5.10"
 
-react-router-dom@^4.0.0:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.1.1.tgz#3021ade1f2c160af97cf94e25594c5f294583025"
+react-router-dom@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.1.2.tgz#7f8a7ca868d32acadd19ca09543b40d26df8ec37"
   dependencies:
     history "^4.5.1"
     loose-envify "^1.3.1"
     prop-types "^15.5.4"
     react-router "^4.1.1"
 
-react-router@^4.0.0, react-router@^4.1.1:
+react-router@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-4.1.1.tgz#d448f3b7c1b429a6fbb03395099949c606b1fe95"
   dependencies:
@@ -3789,9 +3785,21 @@ react-router@^4.0.0, react-router@^4.1.1:
     prop-types "^15.5.4"
     warning "^3.0.0"
 
-react-state-data@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/react-state-data/-/react-state-data-1.0.8.tgz#498176e301bc20079bb60051bb69969577947523"
+react-router@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-4.1.2.tgz#7ae027341abc42eb08ad9f7a8cac08d0563672ce"
+  dependencies:
+    history "^4.6.0"
+    hoist-non-react-statics "^1.2.0"
+    invariant "^2.2.2"
+    loose-envify "^1.3.1"
+    path-to-regexp "^1.5.3"
+    prop-types "^15.5.4"
+    warning "^3.0.0"
+
+react-state-data@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/react-state-data/-/react-state-data-1.0.9.tgz#481776705f970b53efc92b5aa6c2f945699dcf02"
 
 react@^0.14.0:
   version "0.14.9"

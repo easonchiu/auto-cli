@@ -79,6 +79,14 @@ module.exports = yeoman.extend({
 
         // 创建页面
         var promptsView = [{
+            type: 'list',
+            name: 'state',
+            message: 'redux or mobx? ',
+            choices: [
+                'redux',
+                'mobx',
+            ]
+        }, {
             type: 'input',
             name: 'name',
             message: 'view name: ',
@@ -132,6 +140,7 @@ module.exports = yeoman.extend({
             
         }).then(props => {
             this.props.name = props.name;
+            this.props.state = props.state;
             this.props.path = props.path;
             this.props.mass = props.mass;
             return this.prompt(promptsOk);
@@ -155,25 +164,49 @@ module.exports = yeoman.extend({
 
             var type = this.props.mass ? 'mass' : 'scss'
 
-            // 拷贝jsx文件
-            this.fs.copyTpl(
-                this.templatePath(this.props.createBy + '/' + type + '/index.jsx'),
-                this.destinationPath(`${this.props.path}/${this.props.name}/index.jsx`),
-                {
-                    upperName: this.props.upperName,
-                    name: this.props.name
-                }
-            );
+            if (this.props.createBy !== 'view') {
+                // 拷贝jsx文件
+                this.fs.copyTpl(
+                    this.templatePath(this.props.createBy + '/' + type + '/index.jsx'),
+                    this.destinationPath(`${this.props.path}/${this.props.name}/index.jsx`),
+                    {
+                        upperName: this.props.upperName,
+                        name: this.props.name
+                    }
+                );
 
-            // 拷贝css文件
-            this.fs.copyTpl(
-                this.templatePath(this.props.createBy + '/' + type + '/style.' + type),
-                this.destinationPath(`${this.props.path}/${this.props.name}/style.${type}`),
-                {
-                    upperName: this.props.upperName,
-                    name: this.props.name
-                }
-            );
+                // 拷贝css文件
+                this.fs.copyTpl(
+                    this.templatePath(this.props.createBy + '/' + type + '/style.' + type),
+                    this.destinationPath(`${this.props.path}/${this.props.name}/style.${type}`),
+                    {
+                        upperName: this.props.upperName,
+                        name: this.props.name
+                    }
+                );
+            } else {
+                var state = this.props.state
+
+                // 拷贝jsx文件
+                this.fs.copyTpl(
+                    this.templatePath(this.props.createBy + '/' + type + '-' + state + '/index.jsx'),
+                    this.destinationPath(`${this.props.path}/${this.props.name}/index.jsx`),
+                    {
+                        upperName: this.props.upperName,
+                        name: this.props.name
+                    }
+                );
+
+                // 拷贝css文件
+                this.fs.copyTpl(
+                    this.templatePath(this.props.createBy + '/' + type + '-' + state + '/style.' + type),
+                    this.destinationPath(`${this.props.path}/${this.props.name}/style.${type}`),
+                    {
+                        upperName: this.props.upperName,
+                        name: this.props.name
+                    }
+                );
+            }
         }
 
         if (this.props.createBy === 'reducer') {

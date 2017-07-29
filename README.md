@@ -15,7 +15,7 @@ webpack在打test1-5的包略偏向本公司环境使用，使用其中一个即
 - Modules-css (auto-react:create安装时可选)
 - Redux-Actions (配合Redux使用)
 - Classnames
-- Fastclick (若不需要请在入口文件main.jsx中删除相关代码)
+- Fastclick (1.该库在官方库基础上有改动，有bug  2.若不需要请在入口文件main.jsx中删除相关代码)
 - React-state-data (个人开发的一个管理state的轻量级库)
 - Sass
 - Webpack
@@ -23,6 +23,10 @@ webpack在打test1-5的包略偏向本公司环境使用，使用其中一个即
 - Rem (若用于Pc端或不需要Rem单位请在template.html的<head>中删除相关js脚本)
 
 #### Log
+##### 1.2.6
+- 更新redux或mobx时的demo
+- 扩展view时可选使用mobx或redux
+
 ##### 1.2.5
 - 安装时可选择mobx或者redux
 
@@ -37,7 +41,7 @@ webpack在打test1-5的包略偏向本公司环境使用，使用其中一个即
 - redux中的state使用seamless-immutable  
 - view中默认的shouldComponentUpdate语法  
 - webpack在打包test包时使用正式版本的js代码，同时生成包大小的报告  
-- 升级webpack至3.0.0，并使用ModuleConcatenationPlugin插件  
+- 升级webpack至3，并使用ModuleConcatenationPlugin插件  
 
 
 #### 目录结构：
@@ -109,8 +113,8 @@ component
 container
 view
 reducer // 增加完之后要手动在src/redux/actions/index.js与src/redux/reducers/index.js中引入
-mobx state // 
 ```
+另：mobx的state相对简单，所以不使用脚手架扩展
 
 #### Css Modules
 支持css-modules，为了与scss能共同使用，css-modules的样式文件使用.mass，如果需要更换css-modules样式名生成的规则，请到`build/webpack.base.conf.js`中打相应的rules进行修改

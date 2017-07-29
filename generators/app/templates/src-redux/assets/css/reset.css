@@ -156,7 +156,7 @@ a,img { -webkit-touch-callout: none;}
 
 /* 无法选择复制内容 / 去除iphone中按下时的高亮效果 */
 a, select, input:not([type=radio]):not([type=checkbox]), textarea, button { -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0,0,0,0); outline: none;}
-input:not([type=radio]):not([type=checkbox]),textarea { -webkit-user-select: auto; background: rgba(0,0,0,0);}
+input:not([type=radio]):not([type=checkbox]),textarea { -webkit-user-select: auto; background: rgba(0,0,0,0); width: 100%;}
 
 /* 阻止旋转屏幕时自动调整字体大小 */
 * { -webkit-text-size-adjust: none;}

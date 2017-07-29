@@ -5,6 +5,8 @@ import reactStateData from 'react-state-data'
 import {observer} from 'mobx-react'
 import mass from 'mass'
 
+import Button from 'src/components/button'
+import List from 'src/components/list'
 
 
 @connect
@@ -15,25 +17,16 @@ class ViewDemo extends Component {
 	constructor(props) {
 		super(props)
 
-		this.change = this.change.bind(this)
-
 		this.setData({
 			h1: 'AUTO React',
 			used: 'react + react-router + mobx'
 		})
-	}
 
-	change(e) {
-		let val = e.target.value
-		let name = e.target.name
-
-		val = val.replace(/\D/g, '').substr(0, 2)
-		val = parseInt(val)
-
-		this.props.$demo.setVal(val, parseInt(name))
 	}
 	
 	render() {
+		const store = this.props.$demo
+
 		return (
 			<div styleName="view-demo">
 				<div styleName="logo" />
@@ -41,18 +34,17 @@ class ViewDemo extends Component {
 				<p>demo with<br />{this.data.used}</p>
 
 				<div styleName="demo">
-					<input styleName="input" type="number" name="1" onChange={this.change} value={this.props.$demo.val1} />
-					<span>+</span>
-					<input styleName="input" type="number" name="2" onChange={this.change} value={this.props.$demo.val2} />
-					<span>=</span>
-					<span styleName="result">{this.props.$demo.addResult}</span>
+					<div styleName="hd">
+						<Button styleName="btn" onClick={::store.pop}>Pop</Button>
+						<Button styleName="btn" onClick={::store.push}>Push</Button>
+						<Button styleName="btn" onClick={::store.clear}>Clear</Button>
+					</div>
+					<List resource={store.list} />
 				</div>
 			</div>
 		)
 	}
 }
-
-
 
 
 export default ViewDemo

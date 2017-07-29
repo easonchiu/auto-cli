@@ -54,7 +54,7 @@ const webpackConfig = {
 		}, {
         	test: /\.mass$/,
         	use: ExtractTextPlugin.extract({
-        		use: ['css-loader?modules&importLoaders=1&localIdentName=_[hash:base64:11]', 'sass-loader'],
+        		use: ['css-loader?modules&importLoaders=1&localIdentName=[local]_[hash:base64:6]', 'sass-loader'],
         	})
         }, {
         	test: /\.scss$/,

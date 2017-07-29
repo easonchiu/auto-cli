@@ -5,7 +5,7 @@ import mass from 'mass'
 
 const <%= upperName %> = mass(({children}) => {
 	return (
-		<div styleName="con-<%= name %>">
+		<div styleName="<%= name %>">
 			{ '<%= name %> (container)' }
 			{ children }
 		</div>

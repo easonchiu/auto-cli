@@ -5,7 +5,7 @@ import mass from 'mass'
 
 const <%= upperName %> = mass(props => {
 	return (
-		<div styleName="comp-<%= name %>">
+		<div styleName="<%= name %>">
 			{ '<%= name %> (component)' }
 		</div>
 	)

@@ -4,7 +4,9 @@ import connect from 'src/redux/connect'
 import reactStateData from 'react-state-data'
 import mass from 'mass'
 
-import List from 'src/containers/list'
+import Button from 'src/components/button'
+import List from 'src/components/list'
+
 
 @connect
 @reactStateData
@@ -13,45 +15,38 @@ class ViewDemo extends Component {
 	constructor(props) {
 		super(props)
 
-		this.buttonClick = this.buttonClick.bind(this);
-
-		this.list = [{
-			button: 'async btnA',
-			click: this.buttonClick,
-		}, {
-			button: 'btnB',
-			click: this.buttonClick,
-		}]
-		
-	}
-
-	buttonClick(target) {
-		if (target === 'async btnA') {
-			this.props.$demo.anyncEmit({
-				name: target + '(async state in views/demo/index.jsx)'
-			})
-		} else {
-			this.props.$demo.emit({
-				name: target + '(state in views/demo/index.jsx)'
-			})
-		}
+		this.setData({
+			h1: 'AUTO React',
+			used: 'react + react-router + redux'
+		})
 	}
 	
 	render() {
+		
+		const actions = this.props.$demo
+		const state = this.props.$$demo
+
 		return (
 			<fieldset styleName="view-demo">
-				<legend>I am 'demo' view</legend>
-				<h1 styleName="title">demo view with react</h1>
-				<p styleName="info">store: { this.props.$$demo.name }</p>
-				<List content={ this.list } />
-				<br />
-				<List content={ this.list } />
+				<div styleName="logo" />
+				<h1>{this.data.h1}</h1>
+
+				<p>demo with<br />{this.data.used}</p>
+
+				<div styleName="demo">
+					<div styleName="hd">
+						<Button styleName="btn" onClick={actions.pop}>Pop</Button>
+						<Button styleName="btn" onClick={actions.push}>Push</Button>
+						<Button styleName="btn" onClick={actions.clear}>Clear</Button>
+					</div>
+
+					<List resource={state.list} />
+				</div>
+
 			</fieldset>
 		)
 	}
 }
-
-
 
 
 export default ViewDemo

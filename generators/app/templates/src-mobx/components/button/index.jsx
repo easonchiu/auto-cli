@@ -2,16 +2,14 @@ import styles from './style'
 import React from 'react'
 import mass from 'mass'
 
-const Button = mass(({click, text}) => {
+const Button = mass(({onClick, children, className}) => {
 	return (
-		<fieldset styleName="button-comp">
-			<legend>I am 'button' component</legend>
-			<button
-				styleName="button"
-				onClick={ click.bind(this, text) }>
-				{ text }
-			</button>
-		</fieldset>
+		<button
+			className={className}
+			styleName="button"
+			onClick={ onClick }>
+			{ children }
+		</button>
 	)
 }, styles)
 

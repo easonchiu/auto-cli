@@ -1,24 +1,45 @@
 @charset "utf-8";
 
 .view-demo {
-	border: 1px solid #f00;
-	padding: 20px;
-	> legend {
-		color: #f00;
-	}
-	@at-root .title {
-		display: block;
-		font-size: 24px;
+	padding-top: 0.6rem;
+	h1 {
 		text-align: center;
-		line-height: 1.5;
-		margin: 0;
+		color: #3f3f81;
+		font-size: 0.4rem;
+		margin-bottom: 0.2rem;
 	}
-	@at-root .info {
-		display: block;
-		font-size: 12px;
+	p {
 		text-align: center;
+		font-size: 0.3rem;
 		line-height: 1.2;
 		color: #999;
-		margin-bottom: 20px;
+		margin-bottom: 1rem;
 	}
+
+	@at-root .logo {
+		width: 1.5rem;
+		height: 1.5rem;
+		background: url('../../assets/imgs/logo.png');
+		background-size: 100%;
+		margin: 0 auto;
+	}
+
+	@at-root .demo {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		width: 100%;
+		-webkit-box-pack: center;
+		-webkit-box-align: center;
+	}
+	
+	@at-root .hd {
+		display: -webkit-box;
+		margin-bottom: 0.2rem;
+	}
+
+	@at-root .btn {
+		margin: 0 0.1rem;
+	}
+
 }
+

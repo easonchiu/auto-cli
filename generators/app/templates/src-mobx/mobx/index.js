@@ -8,4 +8,3 @@ const states = {
 export default Comp => props => {
 	return <Comp {...props} {...states} />
 }
-
