@@ -1,5 +1,11 @@
 ### yoman for auto-react
 
+#### 新版考虑
+- 重写并整理webpack配置文件
+- 移除modules-css，感觉并不是很好用
+- 整体库的升级
+
+----
 
 #### React项目脚手架，搭配yeoman使用
 
