@@ -2,7 +2,7 @@ const path = require('path')
 
 
 // 打包的出口目录
-const prodPath = '<%= prodPath %>'
+const prodPath = 'prodPath'
 
 
 /*

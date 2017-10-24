@@ -34,7 +34,7 @@ function build(env, name) {
 	const path = require('path')
 
 	// 开始转菊花
-	const spin = ora(chalk.blue(`build for ${env} / ${name}...`))
+	const spin = ora(chalk.blue(`build for ${env} on ${name}...`))
 	spin.start()
 
 	// 删除构建目录

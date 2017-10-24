@@ -28,7 +28,7 @@ const webpackConfig = {
 	module: {
 		rules: [{
 			test: /\.js[x]?$/,
-			loader: 'babel-loader',
+			loader: ['babel-loader'],
 			include: [resolve('src'), resolve('test')],
 		}, {
         	test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
@@ -52,19 +52,9 @@ const webpackConfig = {
         		use: ['css-loader'],
         	})
 		}, {
-        	test: /\.mass$/,
-        	use: ExtractTextPlugin.extract({
-        		use: ['css-loader?modules&importLoaders=1&localIdentName=[local]_[hash:base64:6]', 'sass-loader'],
-        	})
-        }, {
         	test: /\.scss$/,
         	use: ExtractTextPlugin.extract({
         		use: ['css-loader', 'sass-loader'],
-        	})
-        }, {
-        	test: /\.less$/,
-        	use: ExtractTextPlugin.extract({
-        		use: ['css-loader', `less-loader?{"modifyVars":${JSON.stringify({"primary-color": "#00bb55"})}}`],
         	})
         }]
 	},
@@ -97,50 +87,54 @@ const webpackConfig = {
 			allChunks: true,
 		}),
 
-		// 提取公共脚本
+		// 抽babel相关的东西出来，es6/es7转es5的玩意，顺便先把auto抽出来，之后还要抽auto
 		new webpack.optimize.CommonsChunkPlugin({
-			name: 'vendor',
+			name: 'polyfill',
 			minChunks: function(module, count) {
-                return (
-                    module.resource &&
-                    /\.js$/.test(module.resource) &&
-                    module.resource.indexOf(
-                        path.join(__dirname, '../node_modules')
-                    ) === 0
-                )
+				return module.resource &&
+					(/(\/|\@|\\)(babel-runtime|core-js|auto)(\/|\\)/).test(module.resource)
             }
 		}),
-
-		// 抽babel相关的东西出来，es6/es7转es5的玩意
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'core',
-            chunks: ['vendor'],
-            minChunks: function(module, count) {
-            	return (
-            		module.resource && /(\/|\@)core-js\//.test(module.resource)
-                )
-            }
-        }),
-
-        // 上面虽然已经分离了第三方库,每次修改编译都会改变vendor的hash值，导致浏览器缓存失效。
-		// 原因是vendor包含了webpack在打包过程中会产生一些运行时代码，运行时代码中实际上保存了打包后的文件名。
-		// 当修改业务代码时,业务代码的js文件的hash值必然会改变。
-		// 一旦改变必然会导致vendor变化。vendor变化会导致其hash值变化。
-		// 下面主要是将运行时代码提取到单独的manifest文件中，防止其影响vendor.js
+		
+		// 抽auto组件
 		new webpack.optimize.CommonsChunkPlugin({
-			name: 'mainifest',
-			chunks: ['core']
+			name: 'autoui',
+			minChunks: function(module, count) {
+				return module.resource &&
+					(/(\/|\@|\\)auto(\/|\\)/).test(module.resource)
+            }
 		}),
-
 	],
 
 	resolve: {
-		extensions: ['.js', '.jsx', '.scss', '.css', '.mass'],
+		extensions: ['.js', '.jsx', '.scss', '.css'],
 		alias: {
 			'src': resolve('src'),
-			'auto$': resolve('src/auto'),
-			'mass$': resolve('src/assets/libs/mass'),
+			'@': resolve('src'),
+			'$auto': resolve('src/auto'),
+			'$assets': resolve('src/assets'),
+			'$components': resolve('src/components'),
+			'$containers': resolve('src/containers'),
+			'$redux': resolve('src/redux'),
+			'$views': resolve('src/views'),
 		}
+	},
+
+	externals: {
+		'react': 'React',
+		'react-dom': 'ReactDOM',
+		'axios': 'axios',
+		'react-redux': 'ReactRedux',
+		'react-router': 'ReactRouter',
+		'react-router-dom': 'ReactRouterDOM',
+		'redux': 'Redux',
+		'redux-thunk': 'ReduxThunk',
+		'redux-actions': 'ReduxActions',
+		'seamless-immutable': 'Immutable',
+		'js-cookie': 'Cookies',
+		'fastclick': 'FastClick',
+		'qs': 'Qs',
+		'classnames': 'classNames',
 	}
 }
 

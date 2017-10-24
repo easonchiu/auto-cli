@@ -31,14 +31,6 @@ module.exports = yeoman.extend({
             message: 'production path name: ',
             default: 'dist',
         }, {
-            type: 'list',
-            name: 'state',
-            message: 'redux or mobx? ',
-            choices: [
-                'redux',
-                'mobx',
-            ]
-        }, {
             type: 'confirm',
             name: 'ok',
             message: 'ok?',
@@ -107,7 +99,7 @@ module.exports = yeoman.extend({
 
         // 拷贝src目录
         this.fs.copy(
-            this.templatePath('src-' + this.props.state + '/**/*'),
+            this.templatePath('src/**/*'),
             this.destinationPath('src/')
         )
 
