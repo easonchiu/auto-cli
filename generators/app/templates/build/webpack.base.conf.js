@@ -111,7 +111,7 @@ const webpackConfig = {
 		alias: {
 			'src': resolve('src'),
 			'@': resolve('src'),
-			'$auto': resolve('src/auto'),
+			'auto': resolve('src/auto'),
 			'$assets': resolve('src/assets'),
 			'$components': resolve('src/components'),
 			'$containers': resolve('src/containers'),
