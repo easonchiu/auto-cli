@@ -1,12 +1,18 @@
 {
     "presets": [
-    	"es2015",
-    	"stage-0",
-    	"react"
+        "react",
+    	["env", {
+            "targets": {
+                "browsers": ["ios >= 7", "android >= 4.4"]
+            }
+        }]
     ],
     "plugins": [
+        "lodash",
     	"transform-runtime",
+        "transform-object-rest-spread",
     	"transform-decorators-legacy",
+        "syntax-dynamic-import",
     	["component", [
     		{
     			libraryName: "auto"

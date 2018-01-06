@@ -1,17 +1,19 @@
 import React from 'react'
-import { HashRouter, BrowserRouter, Route, Redirect, Switch } from 'react-router-dom'
-const Router = process.env.ENV_NAME === 'production' ? BrowserRouter : HashRouter
+import { asyncComponent } from 'src/routes/asyncComponent'
+import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom'
+const basename = process.env.PACKAGE !== 'develop' ? 'demo' : ''
 
-import ViewDemo from 'src/views/demo'
+const ViewDemo = asyncComponent(e => import('src/views/demo'))
+const ViewDemo2 = asyncComponent(e => import('src/views/demo2'))
 
 const Routes = e => {
 	return (
-		<Router>
+		<BrowserRouter basename={basename}>
 			<Switch>
 				<Route exact path="/" component={ ViewDemo } />
 				<Redirect to="/" />
 			</Switch>
-		</Router>
+		</BrowserRouter>
 	)
 }
 

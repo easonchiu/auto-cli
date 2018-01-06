@@ -1,6 +1,15 @@
+// reset css
 import 'src/assets/css/reset'
 
-import React, { Component } from 'react'
+// some utils
+import 'src/utils/inputEvents'
+import 'src/utils/dateFormat'
+
+// app reset
+import 'src/utils/appReset'
+
+// base framework
+import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 

@@ -12,18 +12,31 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detection" content="telephone=no, email=no" />
     
-    <title>title</title>
+    <title>React App</title>
 
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
+    <meta name="description" content="凹凸租车是太平洋保险战略合作伙伴，一个全新的个人对个人租车平台。车主可以通过出租车辆的闲置时间，赚取额外收入。租客也可比市场价低30%-50%的价格租到想要的车。双方获利的同时，更可增进人际关系，为社区，城市甚至地球的环保做出贡献。凹凸租车为车共享全程提供安全保障。" />
+    <meta name="keywords" content="凹凸租车，上海租车，租车公司，车共享，凹凸man，P2P，自驾游，个性车，私家车赚钱，共享经济，闲置车辆，二手车估价，休闲旅游，汽车后市场，诚信租车，租车平台，上海旅游，车联网终端，atbox" />
 
-    <script>
-    +function(k){var j=window;var n=j.document;var e=n.documentElement;var h=e.clientWidth;h=h/k*100;h-=(h-50)/2;var a=navigator.userAgent;var i=a.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i);var _qq=i&&a.match(/QQ/gi);var d=a.match(/U3\/((\d+|\.){5,})/i);var f=d&&parseInt(d[1].split(".").join(""),10)>=80;var c=navigator.appVersion.match(/(iphone|ipad|ipod)/gi);var m=j.devicePixelRatio||1;if((!c&&!(i&&i[1]>534)&&!f)||_qq){m=1}var g=1/m;var l=n.querySelector('meta[name="viewport"]');l.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+g+",maximum-scale="+g+",minimum-scale="+g);if(!l){l=n.createElement("meta");l.setAttribute("name","viewport");n.head.appendChild(l)}e.style.fontSize=Math.round(h*m)+"px";window.rem=Math.round(h*m);window.dpr=m}(750)
+    <script defer>
+    +function(k){var j=window;var n=j.document;var e=n.documentElement;var h=e.clientWidth;h=h/k*100;h-=(h-50)/2;var a=navigator.userAgent;var i=a.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i);var q=i&&a.match(/QQ/gi);var d=a.match(/U3\/((\d+|\.){5,})/i);var f=d&&parseInt(d[1].split(".").join(""),10)>=80;var c=navigator.appVersion.match(/(iphone|ipad|ipod)/gi);var m=j.devicePixelRatio||1;if((!c&&!(i&&i[1]>534)&&!f)||q){m=1}var g=1/m;var l=n.querySelector('meta[name="viewport"]');l.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+g+",maximum-scale="+g+",minimum-scale="+g);if(!l){l=n.createElement("meta");l.setAttribute("name","viewport");n.head.appendChild(l)}e.style.fontSize=Math.round(h*m)+"px";window.rem=Math.round(h*m);window.dpr=m}(750);
+    var ua = navigator.userAgent;
+    window.isApp = (/atzuche/gi).test(ua);
+    window.isWX = (/MicroMessenger/gi).test(ua);
     </script>
+    
   </head>
   <body>
     <div id="root"></div>
     <script src="//carphoto.atzuche.com/web/auto/js/libs/v1/react.js"></script>
     <script src="//carphoto.atzuche.com/web/auto/js/libs/v1/core.js"></script>
+
+    <script>
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?940ac302dc9436169f5e98f17aca1589";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
   </body>
 </html>

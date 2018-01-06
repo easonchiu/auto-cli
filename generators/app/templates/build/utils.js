@@ -1,8 +1,7 @@
 const path = require('path')
-const config = require('../config')
+const config = require('./conf')
 
-
-exports.assetsPath = function(_path) {
-    var assetsSubDirectory = config[process.env.NODE_ENV].assetsSubDirectory
-    return path.posix.join(assetsSubDirectory, _path)
+exports.assetsPath = function(pathurl) {
+    var assetsSubDirectory = config[process.env.PACKAGE].assetsSubDirectory
+    return path.posix.join(assetsSubDirectory, pathurl)
 }

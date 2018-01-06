@@ -3,11 +3,7 @@ import axios from 'axios'
 const config = {
 	production: '/',
 	develop: 'proxy',
-	test1: '/',
-	test2: '/',
-	test3: '/',
-	test4: '/',
-	test5: '/',
+	test: '/',
 }
 
 const baseURL = config[process.env.ENV_NAME] || config['develop']

@@ -5,18 +5,18 @@ import connect from 'src/redux/connect'
 import Demo from 'src/components/demo'
 
 @connect
-class ViewDemo2 extends PureComponent {
+class ViewDemo extends PureComponent {
 	constructor(props) {
 		super(props)
 	}
 	
 	render() {
 		return (
-			<div className="view-demo2" errorinfo={'222'}>
-				<Demo>hello page2</Demo>
+			<div className="view-demo" errorinfo={'222'}>
+				<Demo>hello page</Demo>
 			</div>
 		)
 	}
 }
 
-export default ViewDemo2
+export default ViewDemo

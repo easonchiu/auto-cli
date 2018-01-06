@@ -1,25 +1,15 @@
-function build(env, name) {
-
-	// 设置环境变量
-	process.env.NODE_ENV = env
-	process.env.ENV_NAME = name
-
-	env = JSON.parse(env)
-	name = JSON.parse(name)
+function build() {
 
 	// webpack组件
 	const webpack = require('webpack')
 
 	// 打包配置
-	const config = require('../config')
+	const config = require('./conf')
 
-	// webpack配置
-	let webpackConfig
-	if (name === 'production') {
-		webpackConfig = require('./webpack.prod.conf')
-	} else {
-		webpackConfig = require('./webpack.test.conf')
-	}
+	// 引用webpack配置
+	const webpackConfig = (process.env.PACKAGE === 'production') ?
+		require('./webpack.prod.conf') :
+		require('./webpack.test.conf')
 
 	// loading动画组件
 	const ora = require('ora')
@@ -34,13 +24,13 @@ function build(env, name) {
 	const path = require('path')
 
 	// 开始转菊花
-	const spin = ora(chalk.blue(`build for ${env} on ${name}...`))
+	const spin = ora(chalk.blue(`build for ${process.env.PACKAGE}...`))
 	spin.start()
 
 	// 删除构建目录
 	// 然后重新构建项目
 	rm(
-		path.join(config[name].assetsRoot),
+		path.join(config[process.env.PACKAGE].assetsRoot),
 		err => {
 
 			if (err) throw err
@@ -58,7 +48,7 @@ function build(env, name) {
 		        }) + '\n\n')
 
 				spin.stop()
-				console.log(chalk.cyan('  Build complete.\n'))
+				console.log(chalk.cyan('  Build for ' + process.env.PACKAGE + ' package complete.\n'))
 			})
 
 
@@ -66,4 +56,4 @@ function build(env, name) {
 	)
 }
 
-module.exports = build
+build()
