@@ -5,7 +5,7 @@ const initialState = Immutable({
 	list: [0, 1, 2]
 })
 
-const demo = handleActions({
+export default handleActions({
 	DEMO_POP (state, action) {
 		const list = Immutable.asMutable(state.list)
 		list.pop()
@@ -33,5 +33,3 @@ const demo = handleActions({
 		// 异步处理结果
 	}
 }, initialState)
-
-export default demo

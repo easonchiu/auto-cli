@@ -19,8 +19,5 @@ const asyncFetch = (payload = {}) => async (dispatch, getState) => {
 
 
 export default {
-	pop,
-	push,
-	clear,
 	asyncFetch
 }

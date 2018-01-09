@@ -8,6 +8,8 @@ import Demo from 'src/components/demo'
 class ViewDemo2 extends PureComponent {
 	constructor(props) {
 		super(props)
+
+		console.log(props)
 	}
 	
 	render() {
