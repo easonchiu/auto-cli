@@ -1,7 +1,14 @@
-import React, {Component} from 'react'
 
-export const asyncComponent = loadComponent => (
-	class AsyncComponent extends Component {
+// 异步加载组建
+// 使用方式：
+// import AsyncComponent from 'src/hoc/asyncComponent'
+// const SomeAsyncComponent = AsyncComponent(e => import('src/xxx/xxx'))
+
+import React, {PureComponent} from 'react'
+
+const AsyncComponent = comp => {
+	class Comp extends PureComponent {
+		
 		constructor(props) {
 			super(props)
 
@@ -15,7 +22,7 @@ export const asyncComponent = loadComponent => (
 				return
 			}
 
-			loadComponent()
+			comp()
 				.then(module => module.default)
 				.then(Component => {
 					this.setState({ Component })
@@ -23,7 +30,7 @@ export const asyncComponent = loadComponent => (
 				.catch(err => {
 					console.error(`Cannot load component in <AsyncComponent />`)
 					throw err
-				});
+				})
 		}
 
 		hasLoadedComponent() {
@@ -32,7 +39,13 @@ export const asyncComponent = loadComponent => (
 
 		render() {
 			const { Component } = this.state
-			return (Component) ? <Component {...this.props} /> : null
+			return Component ? <Component {...this.props} /> : null
 		}
 	}
-)
+
+	Comp.displayName = `AsyncComponent`
+	return Comp
+}
+
+export default AsyncComponent
+

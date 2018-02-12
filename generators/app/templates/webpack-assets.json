@@ -1,0 +1,14 @@
+{
+  "javascript": {
+    "polyfill": "/demo/js/polyfill.30071ff0b7117f5a226b.js",
+    "app": "/demo/js/app.f87144766c7d9541f319.js",
+    "autoui": "/demo/js/autoui.69f12044775c408ea32c.js"
+  },
+  "styles": {
+    "app": "/demo/css/app.2234c91.css"
+  },
+  "assets": {},
+  "webpack": {
+    "version": "3.10.0"
+  }
+}

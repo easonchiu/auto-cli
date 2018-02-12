@@ -5,8 +5,8 @@ import 'src/assets/css/reset'
 import 'src/utils/inputEvents'
 import 'src/utils/dateFormat'
 
-// app reset
-import 'src/utils/appReset'
+// app configure
+import 'src/utils/appConf'
 
 // base framework
 import React from 'react'

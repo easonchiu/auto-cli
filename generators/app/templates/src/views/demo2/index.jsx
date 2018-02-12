@@ -12,7 +12,7 @@ class ViewDemo extends PureComponent {
 	
 	render() {
 		return (
-			<div className="view-demo" errorinfo={'222'}>
+			<div className="view-demo">
 				<Demo>hello page</Demo>
 			</div>
 		)

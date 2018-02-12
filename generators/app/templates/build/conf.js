@@ -17,7 +17,7 @@ const prodPath = 'demo'
 
 module.exports = {
 	develop: {
-        port: 3333,
+        port: 3880,
         assetsPublicPath: '/',
 		cssAssetsPath: '/',
 		assetsSubDirectory: './',

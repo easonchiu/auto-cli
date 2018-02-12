@@ -15,7 +15,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 	output: {
         path: config[process.env.PACKAGE].assetsRoot,
         filename: utils.assetsPath('js/[name].js'),
-        chunkFilename: utils.assetsPath('js/[id].js'),
+        chunkFilename: utils.assetsPath('js/[name].js'),
         publicPath: config[process.env.PACKAGE].assetsPublicPath
     },
 

@@ -9,3 +9,9 @@ $ yarn
 // 完成后浏览器将自动打开，或手动 localhost:3333
 $ npm run dev
 ```
+
+
+[x] css module babel插件添加
+[x] es lint
+[x] ComponentNeedLogin组件
+

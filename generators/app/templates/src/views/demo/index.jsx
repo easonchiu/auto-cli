@@ -8,13 +8,11 @@ import Demo from 'src/components/demo'
 class ViewDemo2 extends PureComponent {
 	constructor(props) {
 		super(props)
-
-		console.log(props)
 	}
 	
 	render() {
 		return (
-			<div className="view-demo2" errorinfo={'222'}>
+			<div className="view-demo2">
 				<Demo>hello page2</Demo>
 			</div>
 		)

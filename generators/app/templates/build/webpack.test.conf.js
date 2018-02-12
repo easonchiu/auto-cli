@@ -72,7 +72,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         jsonpFunction: "$_$", // 默认是webpackJsonp
         path: config[process.env.PACKAGE].assetsRoot,
         filename: utils.assetsPath('js/[name].[chunkhash].js'),
-        chunkFilename: utils.assetsPath('js/[id].[chunkhash].js'),
+        chunkFilename: utils.assetsPath('js/[name].[chunkhash].js'),
         publicPath: config[process.env.PACKAGE].assetsPublicPath
     },
 
