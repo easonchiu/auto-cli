@@ -1,35 +1,45 @@
-import { handleActions } from 'redux-actions'
-import Immutable from 'seamless-immutable'
+import { handleActions } from 'easy-action'
 
-const initialState = Immutable({
+const initialState = {
 	list: [0, 1, 2]
-})
+}
 
 export default handleActions({
+	// 减一项
 	DEMO_POP (state, action) {
-		const list = Immutable.asMutable(state.list)
+		const list = [...state.list]
 		list.pop()
 
-		return Immutable.merge(state, {
+		return {
+			...state,
 			list
-		})
+		}
 	},
+	// 加一项
 	DEMO_PUSH (state, action) {
-		const length = state.list.length
+        const list = [...state.list]
+        list.push(list.length)
 
-		const list = Immutable.asMutable(state.list)
-		list.push(length)
-
-		return Immutable.merge(state, {
-			list
-		})
+        return {
+            ...state,
+            list
+   		}
 	},
+	// 清空
 	DEMO_CLEAR (state, action) {
-		return Immutable.merge(state, {
-			list: []
-		})
+        return {
+            ...state,
+            list: []
+    	}
 	},
-	DEMO_ASYNC_FETCH (state, action) {
-		// 异步处理结果
+    // 异步处理结果
+	DEMO_ASYNC_PUSH (state, action) {
+        const list = [...state.list]
+        list.push(list.length)
+
+        return {
+            ...state,
+            list
+    	}
 	}
 }, initialState)

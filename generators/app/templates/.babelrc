@@ -1,22 +1,32 @@
 {
-    "presets": [
-        "react",
-    	["env", {
-            "targets": {
-                "browsers": ["ios >= 7", "android >= 4.4"]
-            }
-        }]
-    ],
-    "plugins": [
-        "lodash",
-    	"transform-runtime",
-        "transform-object-rest-spread",
-    	"transform-decorators-legacy",
-        "syntax-dynamic-import",
-    	["component", [
-    		{
-    			libraryName: "auto"
-    		}
-    	]]
-    ]
+  "presets": [
+    "react",
+    ["env", {
+      "targets": {
+        "browsers": ["ios >= 7", "android >= 4.4"]
+      }
+    }],
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "transform-object-rest-spread",
+    "transform-decorators-legacy",
+    "syntax-dynamic-import",
+    ["component", [
+      {
+        "libraryName": "auto"
+      }
+    ]],
+    [
+      "react-css-modules", {
+      "generateScopedName": "[local]_[hash:base64:6]",
+      "filetypes": {
+        ".mcss": {
+          "syntax": "postcss-scss"
+        }
+      },
+      "handleMissingStyleName": "ignore"
+    }]
+  ]
 }

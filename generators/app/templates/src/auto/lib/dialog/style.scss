@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.x-dialog {
+	z-index: 99999;
+	&__inner {
+		padding: 0.4rem;
+		overflow: hidden;
+		height: 100%;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+	}
+	&__scroller {
+		-webkit-box-flex: 1;
+		display: -webkit-box;
+	}
+	&__inscroller {
+		-webkit-box-flex: 1;
+		overflow: auto;
+		margin: 0 -0.3rem 0 0;
+		padding: 0 0.3rem 0 0;
+	}
+	.x-modal__inner {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		background: #fff;
+		-webkit-transform-origin: 50%;
+		border-radius: 0.06rem;
+		width: 85%;
+	}
+	&.x-modal--enter {
+		.x-modal__bg {
+			opacity: 1;
+		}
+		.x-modal__inner {
+			-webkit-animation: '__x_dialog_enter' 0.2s ease-out;
+		}
+	}
+	&.x-modal--leave {
+		.x-modal__bg {
+			opacity: 0;
+		}
+		.x-modal__inner {
+			-webkit-animation: '__x_dialog_leave' 0.1s ease-out;
+		}
+	}
+}
+
+@-webkit-keyframes '__x_dialog_enter' {
+	0% { -webkit-transform: scale(1.4,1.4); opacity: 0;}
+	75% { -webkit-transform: scale(0.95,0.95); opacity: 1;}
+	100% { -webkit-transform: scale(1,1); opacity: 1;}
+}
+@-webkit-keyframes '__x_dialog_leave' {
+	0% { -webkit-transform: scale(1,1); opacity: 1;}
+	100% { -webkit-transform: scale(0.95,0.95); opacity: 0;}
+}

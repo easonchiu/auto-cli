@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ea128e7-6843-4b03-9b70-906ed0dc4ba4" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/zhaozhida.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/react-cli.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/.idea/codeStyles/Project.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/.idea/dictionaries/zhaozhida.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/.idea/templates.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/build/auto-import-loader/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/build/auto-import-loader/lib/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/__loading-spin/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/__loading-spin/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/action-sheet/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/action-sheet/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/alert/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/alert/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/button/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/button/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/cell/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/cell/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/dialog/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/dialog/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/input/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/input/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/layout/icon-back-w.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/layout/icon-back.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/layout/icon-close-w.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/layout/icon-close.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/layout/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/layout/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/loading/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/loading/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/modal/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/modal/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/panel/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/panel/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/popup/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/popup/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/radio/icon-checked.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/radio/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/radio/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/select/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/select/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/switch/icon-checked.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/switch/icon-no-check.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/switch/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/switch/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/tabs/index.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/tabs/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/toast/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/auto/lib/toast/style.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/components/demo/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/hoc/componentEvent.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/hoc/view.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/utils/http.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/views/demo/event.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generators/app/templates/src/views/demo2/event.jsx" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/generators/app/index.js" afterPath="$PROJECT_DIR$/generators/app/index.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/.babelrc" afterPath="$PROJECT_DIR$/generators/app/templates/.babelrc" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/README.md" afterPath="$PROJECT_DIR$/generators/app/templates/README.md" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/build/conf.js" afterPath="$PROJECT_DIR$/generators/app/templates/build/conf.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/build/webpack-isomorphic-tools-configuration.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/generators/app/templates/build/webpack.base.conf.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/build/webpack.dev.conf.js" afterPath="$PROJECT_DIR$/generators/app/templates/build/webpack.dev.conf.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/build/webpack.prod.conf.js" afterPath="$PROJECT_DIR$/generators/app/templates/build/webpack.prod.conf.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/build/webpack.test.conf.js" afterPath="$PROJECT_DIR$/generators/app/templates/build/webpack.test.conf.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/gitignore" afterPath="$PROJECT_DIR$/generators/app/templates/gitignore" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/package.json" afterPath="$PROJECT_DIR$/generators/app/templates/package.json" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/assets/libs/http.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/assets/libs/token.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/conf/cdn.js" afterPath="$PROJECT_DIR$/generators/app/templates/src/conf/cdn.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/hoc/asyncPreLogin.jsx" afterPath="$PROJECT_DIR$/generators/app/templates/src/hoc/asyncPreLogin.jsx" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/main.jsx" afterPath="$PROJECT_DIR$/generators/app/templates/src/main.jsx" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/redux/actions/demo.js" afterPath="$PROJECT_DIR$/generators/app/templates/src/redux/actions/demo.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/redux/actions/index.js" afterPath="$PROJECT_DIR$/generators/app/templates/src/redux/actions/index.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/redux/connect.js" afterPath="$PROJECT_DIR$/generators/app/templates/src/redux/connect.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/redux/reducers/demo.js" afterPath="$PROJECT_DIR$/generators/app/templates/src/redux/reducers/demo.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/redux/store/index.js" afterPath="$PROJECT_DIR$/generators/app/templates/src/redux/store/index.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/utils/dateFormat.js" afterPath="$PROJECT_DIR$/generators/app/templates/src/utils/dateFormat.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/utils/inputEvents.js" afterPath="$PROJECT_DIR$/generators/app/templates/src/utils/inputEvents.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/utils/token.js" afterPath="$PROJECT_DIR$/generators/app/templates/src/utils/token.js" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/views/demo/index.jsx" afterPath="$PROJECT_DIR$/generators/app/templates/src/views/demo/index.jsx" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/views/demo/style.scss" afterPath="$PROJECT_DIR$/generators/app/templates/src/views/demo/style.scss" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/views/demo2/index.jsx" afterPath="$PROJECT_DIR$/generators/app/templates/src/views/demo2/index.jsx" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/src/views/demo2/style.scss" afterPath="$PROJECT_DIR$/generators/app/templates/src/views/demo2/style.scss" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/webpack-assets.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/generators/app/templates/yarn.lock" afterPath="$PROJECT_DIR$/generators/app/templates/yarn.lock" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/yarn-error.log" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/app/templates/src/views/demo2/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/app/templates/src/views/demo2/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/app/templates/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/app/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conf.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/app/templates/build/conf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/app/templates/build/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1099">
+              <caret line="66" column="3" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="66" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/app/templates/gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="event.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generators/app/templates/src/views/demo2/event.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>WebpackIsomorphicToolsPlugin</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/generators/app/templates/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/generators/app/templates/build/webpack.test.conf.js" />
+        <option value="$PROJECT_DIR$/generators/app/templates/build/webpack.prod.conf.js" />
+        <option value="$PROJECT_DIR$/generators/app/templates/build/webpack.dev.conf.js" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/views/demo/event.js" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/views/demo/style.scss" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/redux/actions/demo.js" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/redux/actions/index.js" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/redux/connect.js" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/redux/store/index.js" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/redux/reducers/demo.js" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/hoc/componentEvent.js" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/hoc/view.jsx" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/views/demo/index.jsx" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/views/demo/event.jsx" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/views/demo2/event.jsx" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/views/demo2/style.scss" />
+        <option value="$PROJECT_DIR$/generators/app/templates/src/views/demo2/index.jsx" />
+        <option value="$PROJECT_DIR$/generators/app/templates/gitignore" />
+        <option value="$PROJECT_DIR$/generators/app/templates/package.json" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/generators/app/templates/README.md" />
+        <option value="$PROJECT_DIR$/generators/app/templates/build/conf.js" />
+        <option value="$PROJECT_DIR$/generators/app/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/generators/app/templates/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1903" />
+    <option name="y" value="-257" />
+    <option name="width" value="1920" />
+    <option name="height" value="1033" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Dart</id>
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Node.jsJavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="react-cli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-cli" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ea128e7-6843-4b03-9b70-906ed0dc4ba4" name="Default" comment="" />
+      <created>1519921228522</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1519921228522</updated>
+      <workItem from="1519921229864" duration="3345000" />
+      <workItem from="1519962079734" duration="6329000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9674000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1920" y="-257" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28541338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.760917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="14" />
+          <folding>
+            <element signature="e#58#88#0" expanded="false" />
+            <element signature="e#183#208#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/build/webpack.test.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="57" column="5" lean-forward="false" selection-start-line="57" selection-start-column="5" selection-end-line="58" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/routes/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/webpack-assets.json" />
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/server.js" />
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/build/webpack-isomorphic-tools-configuration.js" />
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1341">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/routes/index.js" />
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="14" />
+          <folding>
+            <element signature="e#58#88#0" expanded="false" />
+            <element signature="e#183#208#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/build/webpack.test.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/node_modules/react-router-dom/es/Link.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="89" column="6" lean-forward="false" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/auto/lib/cell/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/redux/actions/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/views/demo/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/auto/lib/dialog/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/redux/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/redux/connect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/redux/reducers/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/hoc/asyncComponent.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/hoc/asyncPreLogin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/hoc/componentEvent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/hoc/view.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding>
+            <element signature="e#160#199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/redux/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/routes/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/views/demo/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="15" column="61" lean-forward="true" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/views/demo/event.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/views/demo2/event.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/views/demo2/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/src/views/demo2/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn-error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1099">
+          <caret line="66" column="3" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="66" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/build/conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/build/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="107" column="34" lean-forward="true" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/templates/build/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators/app/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

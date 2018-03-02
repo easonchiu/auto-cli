@@ -3,14 +3,12 @@ var yeoman = require('yeoman-generator')
 var chalk = require('chalk')
 var yosay = require('yosay')
 
-
 module.exports = yeoman.extend({
 
     // 0. 重写构造函数
     constructor: function () {
         // 加上apply这句就能接收命令参数了
         yeoman.apply(this, arguments)
-
     },
 
     // 1. 接收参数
@@ -45,21 +43,16 @@ module.exports = yeoman.extend({
     // 2. 渲染模版
     writing: function () {
 
-        console.log(this.props)
-
         // 最后确认时选择n时停止渲染模板
         if (!this.props.ok) {
             console.log(chalk.red('stopped'))
             return false;
         }
 
-        // 拷贝.开头的文件
-        this.fs.copyTpl(
-            this.templatePath('.*'),
-            this.destinationPath(),
-            {
-                prodPath: this.props.prodPath,
-            }
+        // 拷贝.babelrc
+        this.fs.copy(
+            this.templatePath('.babelrc'),
+            this.destinationPath('.babelrc')
         )
 
         // 拷贝gitignore文件
@@ -104,15 +97,9 @@ module.exports = yeoman.extend({
         )
 
         // 拷贝build目录
-        this.fs.copy(
-            this.templatePath('build/*'),
-            this.destinationPath('build/')
-        )
-
-        // 拷贝config目录
         this.fs.copyTpl(
-            this.templatePath('config/*'),
-            this.destinationPath('config/'),
+            this.templatePath('build/**/*'),
+            this.destinationPath('build/'),
             {
                 prodPath: this.props.prodPath,
             }

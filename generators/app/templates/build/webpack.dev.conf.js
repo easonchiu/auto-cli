@@ -49,7 +49,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 		port: config[process.env.PACKAGE].port,
 		proxy: {
 			'/proxy/*': {
-				target: 'http://test3-web.autozuche.com/appserver/h5/',
+				target: 'http://test3-web.autozuche.com/',
 				pathRewrite: {
 					'^/proxy/': '/'
 				},

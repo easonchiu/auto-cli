@@ -1,5 +1,5 @@
 import $demo from './demo'
 
-export {
+export default {
 	$demo
 }

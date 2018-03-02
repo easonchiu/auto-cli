@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.x-switch {
+	display: block;
+	width: 1rem;
+	height: 0.54rem;
+	background-color: #ddd;
+	border-radius: 0.27rem;
+	-webkit-transition: all 0.3s ease-out;
+	position: relative;
+	box-shadow: 0 0 0 0 rgba(0,187,68,0) inset;
+	> em {
+		display: block;
+		border-radius: 50%;
+		width: 0.46rem;
+		height: 0.46rem;
+		position: absolute;
+		left: 0.04rem;
+		top: 0.04rem;
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 0.2rem;
+		-webkit-transition: all 0.3s ease-out;
+	}
+	&--active {
+		box-shadow: 0 0 0 0.3rem rgba(0,187,68,1) inset;
+		background-color: #00bb55;
+		em {
+			-webkit-transform: translate(0.46rem, 0);
+		}
+	}
+	&--icon {
+		> em {
+			background-image: url('./icon-no-check.png');
+		}
+		&.x-switch--active {
+			> em {
+				background-image: url('./icon-checked.png');
+			}
+		}
+	}
+	&--io {
+		width: 1.2rem;
+		sub, sup {
+			display: -webkit-box;
+			-webkit-box-align: center;
+			-webkit-box-pack: start;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			font-style: normal;
+			color: #fff;
+			padding: 0 0.2rem;
+			font-size: 0.24rem;
+			-webkit-transition: opacity 0.2s ease-out;
+			opacity: 0;
+		}
+		sub {
+			-webkit-box-pack: end;
+			opacity: 1;
+		}
+		&.x-switch--active {
+			sub {
+				opacity: 0;
+			}
+			sup {
+				opacity: 1;
+			}
+			em {
+				-webkit-transform: translate(0.66rem, 0);
+			}
+		}
+	}
+}

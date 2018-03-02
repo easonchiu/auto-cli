@@ -4,8 +4,7 @@ const path = require('path')
 const prefixPath = ''
 
 // 打包的出口目录
-// const prodPath = '<%= prodPath %>'
-const prodPath = 'demo'
+const prodPath = '<%= prodPath %>' // 注意：千万不可为空，为空时打包会将整个目录清空
 
 /*
  * {assetsRoot} 资源入口

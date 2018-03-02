@@ -1,8 +1,7 @@
+.idea
 .sass-cache
 *.bak
 *.log
 node_modules
 .DS_Store
-<%= prodPath %>/
-psd/
-test/
+<%= prodPath %>

@@ -1,10 +1,8 @@
-const path = require('path')
 const config = require('./conf')
 const utils = require('./utils')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
-const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 
 const baseWebpackConfig = require('./webpack.base.conf')
 
@@ -44,9 +42,6 @@ const webpackConfig = merge(baseWebpackConfig, {
                     (/(\/|\@|\\)auto(\/|\\)/).test(module.resource)
             }
         }),
-
-        // lodash按需加载
-        // new LodashModuleReplacementPlugin(),
 
         // 压缩js，并剔除console打印
         new webpack.optimize.UglifyJsPlugin({

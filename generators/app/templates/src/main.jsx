@@ -31,3 +31,9 @@ render(
 	</Provider>,
 	document.getElementById('root')
 )
+
+module.hot && module.hot.accept()
+
+// 正式发布时需要删除下方代码
+import v from 'vconsole'
+new v()

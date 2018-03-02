@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.x-radio {
+	display: -webkit-inline-box;
+	-webkit-box-align: center;
+	padding-right: 0.2rem;
+	i {
+		display: block;
+		width: 0.32rem;
+		height: 0.32rem;
+		border-radius: 50%;
+		background: #eee;
+		overflow: hidden;
+	}
+	
+	span {
+		display: block;
+		font-size: 0.26rem;
+		color: #999;
+		margin-left: 0.1rem;
+	}
+
+	&__checked {
+		i {
+			background: #00bb44 url('./icon-checked.png') center no-repeat;
+			background-size: 50%;
+		}
+		span {
+			color: #333;
+		}
+	}
+}

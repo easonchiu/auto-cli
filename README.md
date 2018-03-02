@@ -1,53 +1,11 @@
 ### yoman for auto-react
 
-#### 2017.09.98 新版考虑
-- 重写并整理webpack配置文件
-- 移除modules-css，感觉并不是很好用
-- 整体库的升级
-
-----
 
 #### React项目脚手架，搭配yeoman使用
 
 webpack在打test1-5的包略偏向本公司环境使用，使用其中一个即可，1-5除了环境变量(process.env.ENV_NAME)之外，并无多大区别 
 本脚手架中的reset样式文件偏向移动端使用，若使用Pc端请自备
 
-----
-#### 特点
-- React
-- React-router
-- Redux / Mobx (可选)
-- Seamless-Immutable (配合Redux使用)
-- Modules-css (auto-react:create安装时可选)
-- Redux-Actions (配合Redux使用)
-- Classnames
-- Fastclick (1.该库在官方库基础上有改动，有bug  2.若不需要请在入口文件main.jsx中删除相关代码)
-- React-state-data (个人开发的一个管理state的轻量级库)
-- Sass
-- Webpack
-- ES6
-- Rem (若用于Pc端或不需要Rem单位请在template.html的<head>中删除相关js脚本)
-
-#### Log
-##### 1.2.6
-- 更新redux或mobx时的demo
-- 扩展view时可选使用mobx或redux
-
-##### 1.2.5
-- 安装时可选择mobx或者redux
-
-##### 1.2.4
-- 添加react-state-data库，方便state管理
-- 默认支持@装饰器写法
-
-##### 1.2.3
-- 修复一些bug
-
-##### 1.2.2  
-- redux中的state使用seamless-immutable  
-- view中默认的shouldComponentUpdate语法  
-- webpack在打包test包时使用正式版本的js代码，同时生成包大小的报告  
-- 升级webpack至3，并使用ModuleConcatenationPlugin插件  
 
 
 #### 目录结构：

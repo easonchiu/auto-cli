@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.x-button {
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	cursor: pointer;
+	width: 100%;
+	height: 0.9rem;
+	font-size: 0.3rem;
+	border-radius: 0.05rem;
+	p {
+		display: block;
+		padding: 0 0.1rem;
+	}
+	&:active {
+		opacity: 1;
+		color: #fff;
+	}
+	&__loading {
+		.x-loading__spin {
+			width: 0.25rem;
+			height: 0.25rem;
+		}
+		.x-loading__spin_path {
+			stroke: #fff;
+			stroke-width: 5px; /*no*/
+		}
+	}
+	&--primary {
+		background: #00bb55;
+		color: #fff;
+		&:active {
+			background: #00bb55 - 10;
+		}
+	}
+	&--danger {
+		background: #ff5f4a;
+		color: #fff;
+		&:active {
+			background: #ff5f4a - 10;
+		}
+	}
+	&--default {
+		border: 2px solid #00bb55;
+		background: #fff;
+		color: #00bb55;
+		&:active {
+			opacity: 0.7;
+			color: #00bb55;
+		}
+		.x-button__loading {
+			.x-loading__spin_path {
+				stroke: #00bb55;
+			}
+		}
+	}
+	&--mini {
+		width: auto;
+		display: -webkit-inline-box;
+		height: 0.7rem;
+		font-size: 0.28rem;
+		padding: 0 0.3rem;
+		.x-button__loading {
+			.x-loading__spin {
+				width: 0.2rem;
+				height: 0.2rem;
+			}
+		}
+	}
+	&--disabled {
+		opacity: 0.6;
+		pointer-events: none;
+	}
+}

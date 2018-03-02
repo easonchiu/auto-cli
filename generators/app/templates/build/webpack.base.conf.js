@@ -6,15 +6,6 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HappyPack = require('happypack')
-const WebpackIsomorphicToolsPlugin = require('webpack-isomorphic-tools/plugin')
-
-const webpackIsomorphicToolsPlugin = 
-  // webpack-isomorphic-tools settings reside in a separate .js file 
-  // (because they will be used in the web server code too).
-  new WebpackIsomorphicToolsPlugin(require('./webpack-isomorphic-tools-configuration'))
-  // also enter development mode since it's a development webpack configuration
-  // (see below for explanation)
-  .development()
 
 function resolve(dir) {
 	return path.join(__dirname, '..', dir)
@@ -56,20 +47,39 @@ const webpackConfig = {
         	use: ExtractTextPlugin.extract({
         		use: ['css-loader', 'sass-loader'],
         	})
-        }, {
-	        test: webpackIsomorphicToolsPlugin.regularExpression('images'),
-	        loader: 'url-loader?limit=10240', // any image below or equal to 10K will be converted to inline base64 instead
-	    }]
+        }]
 	},
 
 	plugins: [
-		
-		// 多线程打包
-		new HappyPack({
-			id: 'jsx',
-			threads: 4,
-			loaders: ['babel-loader']
-		}),
+
+        // 多线程打包
+        new HappyPack({
+            id: 'jsx',
+            threads: 4,
+            loaders: [
+                'babel-loader',
+                {
+                    loader: './build/auto-import-loader',
+                    options: {
+                        components: {
+                            Layout: 'src/auto/lib/layout',
+                            ActionSheet: 'src/auto/lib/action-sheet',
+                            Button: 'src/auto/lib/button',
+                            Cell: 'src/auto/lib/cell',
+                            Dialog: 'src/auto/lib/dialog',
+                            Input: 'src/auto/lib/input',
+                            Panel: 'src/auto/lib/panel',
+                            Popup: 'src/auto/lib/popup',
+                            Radio: 'src/auto/lib/radio',
+                            Select: 'src/auto/lib/select',
+                            Switch: 'src/auto/lib/switch',
+                            Tabs: 'src/auto/lib/tabs'
+                        },
+                        include: [resolve('src/views')],
+                    }
+                }
+            ]
+        }),
 
 		// 提取html模板
 		new HtmlWebpackPlugin({
@@ -89,8 +99,7 @@ const webpackConfig = {
 			filename: utils.assetsPath('css/[name].[hash:7].css'),
 			allChunks: true,
 		}),
-		
-		webpackIsomorphicToolsPlugin
+
 	],
 
 	resolve: {

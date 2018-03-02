@@ -1,10 +1,8 @@
-const path = require('path')
 const config = require('./conf')
 const utils = require('./utils')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
-const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
 const Visualizer = require('webpack-visualizer-plugin')
 
 const baseWebpackConfig = require('./webpack.base.conf')
@@ -45,9 +43,6 @@ const webpackConfig = merge(baseWebpackConfig, {
                     (/(\/|\@|\\)auto(\/|\\)/).test(module.resource)
             }
         }),
-
-        // lodash按需加载
-        // new LodashModuleReplacementPlugin(),
 
         //压缩提取出的css，并解决ExtractTextPlugin分离出的js重复问题(多个文件引入同一css文件)
         new OptimizeCSSPlugin({

@@ -8,8 +8,7 @@ const composedCreateStore = compose(
 )(createStore)
 
 const configureStore = (initialState = {}) => {
-	const store = composedCreateStore(reducers, initialState)
-	return store
+    return composedCreateStore(reducers, initialState)
 }
 
 export default configureStore

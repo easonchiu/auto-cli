@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+.x-tabs {
+	display: -webkit-box;
+	height: 1rem;
+	position: relative;
+	width: 100%;
+	&__item {
+		display: -webkit-box;
+		-webkit-box-align: center;
+		-webkit-box-pack: center;
+		width: 100%;
+		-webkit-box-flex: 1;
+		background: #fff;
+		font-size: 0.3rem;
+		font-weight: bold;
+		color: #999;
+		position: relative;
+		&:active {
+			// background: #fafafa;
+			color: inherit;
+		}
+	}
+	&--active {
+		color: #333;
+		&:active {
+			color: #333;
+		}
+	}
+	&__line {
+		width: 50%;
+		height: 0.06rem;
+		// background: #00bb44;
+		-webkit-transition: -webkit-transform 0.3s cubic-bezier(0.86,0,0.07,1);
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 9;
+		top: auto;
+		pointer-events: none;
+		&:after {
+			content: '';
+			background: #00bb44;
+			width: 0.3rem;
+			height: 0.06rem;
+			position: absolute;
+			left: 50%;
+			top: 0;
+			margin-left: -0.15rem;
+			border-radius: 0.03rem;
+		}
+	}
+}
