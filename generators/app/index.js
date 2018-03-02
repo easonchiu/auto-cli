@@ -1,18 +1,12 @@
 'use strict';
-var yeoman = require('yeoman-generator')
+var Generator = require('yeoman-generator');
 var chalk = require('chalk')
 var yosay = require('yosay')
 
-module.exports = yeoman.extend({
-
-    // 0. 重写构造函数
-    constructor: function () {
-        // 加上apply这句就能接收命令参数了
-        yeoman.apply(this, arguments)
-    },
+module.exports = class extends Generator {
 
     // 1. 接收参数
-    prompting: function () {
+    prompting() {
         var prompts = [{
             type: 'input',
             name: 'appName',
@@ -38,10 +32,10 @@ module.exports = yeoman.extend({
             // 1.1 将参数挂载在 this 下
             this.props = props;
         }.bind(this))
-    },
+    }
 
     // 2. 渲染模版
-    writing: function () {
+    writing() {
 
         // 最后确认时选择n时停止渲染模板
         if (!this.props.ok) {
@@ -105,13 +99,13 @@ module.exports = yeoman.extend({
             }
         )
 
-    },
+    }
 
     // 3. 安装依赖
-    install: function () {
+    install() {
         if (this.props.ok) {
             console.log(chalk.bgBlue('done, please input \'yarn\' to install !'))
         }
         // this.npmInstall()
     }
-})
+}
