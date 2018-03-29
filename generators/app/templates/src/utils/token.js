@@ -23,6 +23,7 @@ export const initToken = async e => {
 						setToken(res.token)
 						resolve()
 					} else {
+						clearToken()
 						reject()
 					}
 				}
@@ -34,6 +35,7 @@ export const initToken = async e => {
 				resolve()
 			}
 			else {
+				clearToken()
 				reject()
 			}
 		}
@@ -53,11 +55,13 @@ export const toLogin = e => {
 				window.location.reload()
 			},
 			cancel() {
+				clearToken()
 				at.closeWindow()
 			}
 		})
 	}
 	else {
+		clearToken()
 		const search = qs.stringify({
 			redirect: window.location.href
 		})
